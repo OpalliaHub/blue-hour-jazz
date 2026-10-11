@@ -1,0 +1,4 @@
+# Copy this file to .dev.vars for LOCAL development only.
+# Enter your own DeepSeek key locally; never commit .dev.vars.
+DEEPSEEK_API_KEY=""
+DEEPSEEK_MODEL="deepseek-flash"
