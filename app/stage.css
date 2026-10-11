@@ -1,0 +1,40 @@
+.jazz-stage{position:relative;overflow:hidden;background:#414735;isolation:isolate;border-radius:4px;box-shadow:inset 0 0 0 1px #ffffff08}
+.jazz-stage-svg{display:block;width:100%;height:auto;overflow:visible;min-height:230px;object-fit:cover}
+.jazz-stage-caption,.jazz-scene-caption{position:absolute;top:20px;font-family:Arial,sans-serif;font-size:8px;font-weight:500;letter-spacing:1.7px;color:#ddcfaa;display:flex;align-items:center;gap:7px;pointer-events:none;opacity:.72}
+.jazz-stage-caption{left:23px}.jazz-scene-caption{right:23px;font-size:7px;letter-spacing:1.4px}
+.jazz-live-dot{width:5px;height:5px;border-radius:50%;background:#b7ad88;display:block}.jazz-live-dot-active{background:#efd08f;box-shadow:0 0 8px #efd08f99}
+.jazz-musician{cursor:pointer;outline:none;transition:opacity .45s,filter .45s}
+.jazz-musician.jazz-absent{opacity:.23;filter:grayscale(.85)}
+.jazz-musician.jazz-absent:hover,.jazz-musician.jazz-absent:focus-visible{opacity:.5}
+.jazz-selection-ring{opacity:0;transition:opacity .25s;pointer-events:none}
+.jazz-musician:hover .jazz-selection-ring{opacity:.55}
+.jazz-musician:focus-visible .jazz-selection-ring,.jazz-musician.jazz-selected .jazz-selection-ring{opacity:1;stroke-width:2.5}
+.jazz-hit-area{pointer-events:all}
+.jazz-stage-label{transition:opacity .4s}.jazz-label-muted{opacity:.5}
+.jazz-body-bob,.jazz-piano-arm,.jazz-guitar-hand,.jazz-bass-hand,.jazz-cymbal,.jazz-sax-instrument,.jazz-drum-arm-left,.jazz-drum-arm-right{transform-box:fill-box;transform-origin:center bottom}
+.jazz-is-playing .jazz-present .jazz-body-bob{animation:jazz-sway 1.6s ease-in-out infinite}
+.jazz-is-playing .jazz-musician-guitar .jazz-body-bob{animation-delay:-.4s}
+.jazz-is-playing .jazz-musician-sax .jazz-body-bob{animation-duration:2.4s;animation-delay:-.3s}
+.jazz-is-playing .jazz-musician-bass .jazz-body-bob{animation-delay:-.8s}
+.jazz-is-playing .jazz-present .jazz-piano-arm{animation:jazz-keypress .8s ease-in-out infinite;transform-origin:left center}
+.jazz-is-playing .jazz-present .jazz-guitar-hand{animation:jazz-strum .8s ease-in-out infinite;transform-origin:left center}
+.jazz-is-playing .jazz-present .jazz-bass-hand{animation:jazz-pluck .8s ease-in-out infinite;transform-origin:left center}
+.jazz-is-playing .jazz-present .jazz-cymbal{animation:jazz-cymbal-swing .8s ease-in-out infinite;transform-origin:center center}
+.jazz-is-playing .jazz-present .jazz-drum-arm-left{animation:jazz-stick-left .8s ease-in-out infinite;transform-origin:right top}
+.jazz-is-playing .jazz-present .jazz-drum-arm-right{animation:jazz-stick-right .8s ease-in-out infinite;transform-origin:left top;animation-delay:-.4s}
+.jazz-is-playing .jazz-present .jazz-delay{animation-delay:-.4s}
+.jazz-notes{animation:jazz-note-float 3.2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.jazz-note-second{opacity:.6}
+.jazz-is-playing .jazz-musician-guitar .jazz-notes{animation-delay:-1s}
+.jazz-is-playing .jazz-musician-drums .jazz-notes{animation-delay:-2s}
+.jazz-is-playing .jazz-musician-bass .jazz-notes{animation-delay:-.5s}
+@keyframes jazz-sway{0%,100%{transform:rotate(-1deg) translateY(0)}50%{transform:rotate(1deg) translateY(-2px)}}
+@keyframes jazz-keypress{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(3deg)}}
+@keyframes jazz-strum{0%,100%{transform:translateY(-1px) rotate(-4deg)}45%{transform:translateY(4px) rotate(9deg)}}
+@keyframes jazz-pluck{0%,100%{transform:translateX(0) rotate(-2deg)}45%{transform:translateX(-3px) rotate(4deg)}}
+@keyframes jazz-cymbal-swing{0%,100%{transform:rotate(-1deg)}25%{transform:rotate(2deg)}50%{transform:rotate(-1.5deg)}75%{transform:rotate(.8deg)}}
+@keyframes jazz-stick-left{0%,100%{transform:rotate(2deg)}40%{transform:rotate(-13deg)}55%{transform:rotate(5deg)}}
+@keyframes jazz-stick-right{0%,100%{transform:rotate(-2deg)}40%{transform:rotate(13deg)}55%{transform:rotate(-5deg)}}
+@keyframes jazz-note-float{0%{opacity:0;transform:translateY(9px) rotate(-8deg)}25%{opacity:.6}70%{opacity:.35}100%{opacity:0;transform:translateY(-15px) rotate(8deg)}}
+@media(max-width:640px){.jazz-stage-svg{min-height:220px;width:115%;max-width:none;margin-left:-7.5%}.jazz-stage-caption{left:12px;top:12px;font-size:6px;letter-spacing:1px}.jazz-scene-caption{right:12px;top:13px;font-size:5px;letter-spacing:.8px}.jazz-live-dot{width:4px;height:4px}}
+@media(prefers-reduced-motion:reduce){.jazz-stage *{animation:none!important;transition:none!important}.jazz-notes{opacity:.35}}
