@@ -1,0 +1,208 @@
+BLUE HOUR — REPERTOIRE PROVENANCE AND ADAPTATION NOTES
+核验日期 / Sources checked: 2026-10-12
+
+范围 / Scope
+The library contains 239 different playable tunes: 235 licensed chord-annotation
+arrangements plus four early instrumental melodies. Take Five is listening-only.
+Autumn Leaves and So What retain their listening recommendations and now also
+have playable chord annotations; they are counted once each, not as duplicates.
+
+Four early instrumental teaching arrangements are bundled in lib/repertoire.ts.
+The additional data and mappings are in lib/standard-catalog-data.ts and
+lib/standard-catalog.ts. Source melody is present only for the four Freed Jazz
+tunes named below. For all other tunes, the automatic saxophone is a generated
+chord-tone demonstration, not the tune's melody or a master solo transcription.
+No lyrics, commercial recording audio, artist solo transcription, album artwork,
+or Real Book scan is bundled. All sound in the game is synthesized by the app.
+The original exercises elsewhere in the app are separate from these standards.
+
+权利依据 / Rights basis
+Freed Jazz publishes lead sheets for compositions it identifies as public domain
+in the United States and declares its own editions public domain there:
+https://freedjazz.org/
+https://github.com/richardjs/freed-jazz
+Its individual tune pages explicitly warn that copyright status can differ in
+other territories. This is a US-based source declaration, not a worldwide license
+or a claim that all jazz standards are open source. Local public distribution
+requires checking the relevant territory. No rights in a recommended commercial
+recording are obtained through the status of the underlying composition.
+US Copyright Office explanation of separate musical-work and recording rights:
+https://www.copyright.gov/circs/circ56a.pdf
+
+谱源 / Score sources
+
+Oh, Lady Be Good! — music by George Gershwin; publication 1924; source key G.
+Page: https://freedjazz.org/tunes/oh-lady-be-good/
+MuseScore source: https://freedjazz.org/tunes/oh-lady-be-good/oh-lady-be-good.mscz
+SHA-256 of retrieved source: 57027a0b437c08540c364e39c1f2339d3a7cbe63eb46fb052222ff3ab2b7bb8d
+
+Look for the Silver Lining — music by Jerome Kern; publication 1920; source key Eb.
+Page: https://freedjazz.org/tunes/look-for-the-silver-lining/
+MuseScore source: https://freedjazz.org/tunes/look-for-the-silver-lining/look-for-the-silver-lining.mscz
+SHA-256 of retrieved source: 9918bbdb802a17188e8db108d588474bac580e29520afa050f0a6ea0a5acaf11
+
+Embraceable You — music by George Gershwin; publication 1930; source key G.
+Page: https://freedjazz.org/tunes/embraceable-you/
+MuseScore source: https://freedjazz.org/tunes/embraceable-you/embraceable-you.mscz
+SHA-256 of retrieved source: fb4e74e6c86e17eb6b6e06d1ef601fc7b040bd8f23343e335d743ee8a5626c3b
+
+I Got Rhythm — music by George Gershwin; publication 1930; source key Bb.
+Page: https://freedjazz.org/tunes/i-got-rhythm/
+MuseScore source: https://freedjazz.org/tunes/i-got-rhythm/i-got-rhythm.mscz
+SHA-256 of retrieved source: 46af321a8abfd94f88d4a80293dd4595ccf3f975ea466de25bd34dcdf9dacdc7
+
+教学改编 / Adaptation
+- Read the melody staff in the source MuseScore files. Preserve written pitch,
+  note duration, dotted rhythm, tuplets, rests and ties as timed MIDI note events.
+  Do not include the lyrics or editorial layout.
+- Use one chord per 4/4 bar: retain the FIRST source chord in that bar and hold it
+  for the bar. Omit later changes within the bar. This is a deliberately simpler
+  harmonic accompaniment, not a claim to reproduce the entire source arrangement.
+- Normalize source chord spelling to the app's grammar (e.g. -7 to m7, ^ to maj7,
+  07 to m7b5, o7 to dim7); preserve slash-bass notes. No unsupported symbol is
+  silently substituted at playback.
+- Oh, Lady Be Good!, Look for the Silver Lining and Embraceable You use all 32
+  bars of the source theme. I Got Rhythm uses the first 32 bars of its 36 written
+  source bars: repeat/coda navigation and the four written coda bars are omitted.
+  The app labels this as a 32-bar learning loop, not the complete original ending.
+- Game tempo, swing feel, instrument sounds, voicings, bass lines and drum patterns
+  are the app's teaching arrangement. They do not recreate any linked artist's
+  performance. Playback swing can change the feel of the source's written rhythm.
+- Imported files and this source corpus are different pathways. There is no
+  automated importer or implied permission for a complete Real Book collection.
+
+聆听入口 / Listening links
+The UI links to artist, label or authorized streaming catalog pages. It does not
+fetch, cache, copy or redistribute the recordings. Access can depend on country
+and subscription; links may change. Instructions refer to audible sections rather
+than unverified timestamps. Recording years in the UI are original album release
+years unless the named item is a dated performance or a later compilation.
+
+Ella Fitzgerald / Nelson Riddle: Gershwin Song Book (1959), official Verve catalog:
+https://music.apple.com/us/album/ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book/1469619207
+Oh, Lady Be Good!: https://music.apple.com/us/song/oh-lady-be-good/1469619401
+Embraceable You: https://music.apple.com/us/song/embraceable-you/1469620608
+I Got Rhythm: https://music.apple.com/us/song/i-got-rhythm/1469620864
+Context from the Gershwin estate:
+https://gershwin.com/celebrating-ella-fitzgeralds-100th-birthday/
+
+Oscar Peterson: Oh, Lady Be Good! — Gershwin Song Book (1959):
+https://music.apple.com/us/song/oh-lady-be-good/1443906033
+Oscar Peterson: I Got Rhythm — Plays George Gershwin (1953; a DIFFERENT album):
+https://open.spotify.com/album/0KFgCHlZfsDrremrORQ3PP
+https://www.qobuz.com/us-en/album/oscar-peterson-plays-george-gershwin-oscar-peterson/0060255741109
+
+Chet Baker: Look for the Silver Lining — Chet Baker Sings (1954 recording):
+https://www.youtube.com/watch?v=mrf_zmVhACI
+Blue Note release notes for the album's 1954/1956 sessions:
+https://store.bluenote.com/products/chet-baker-chet-baker-sings-lp-tone-poet-series
+Tony Bennett / Bill Charlap: Look for the Silver Lining, New York, August 2015:
+https://www.youtube.com/watch?v=2Bjs0n29qTY
+
+Charlie Parker: Embraceable You — 1947 Dial performance; linked through
+The Complete Savoy & Dial Master Takes (2002 compilation):
+https://www.youtube.com/watch?v=nbT4JlDmjxg
+Primary scholarly analysis of the October 28, 1947 performance:
+https://www.mtosmt.org/issues/mto.18.24.2/mto.18.24.2.martin.php
+
+Autumn Leaves: official listening links; licensed chord annotations are now
+available in the game, but no original melody or score image is bundled.
+Cannonball Adderley / Miles Davis — Somethin' Else (1958):
+https://www.bluenote.com/spotlight/cannonball-adderley-somethin-else/
+Bill Evans Trio — Portrait in Jazz (recorded 1959, released 1960):
+https://billevans.bandcamp.com/album/portrait-in-jazz?t=2
+
+So What: official listening links; licensed chord annotations are now available
+in the game, but no original melody or score image is bundled.
+Miles Davis — Kind of Blue (1959):
+https://www.milesdavis.com/albums/kind-of-blue/
+Miles Davis — 'Four' & More (recorded February 1964; released 1966):
+https://www.milesdavis.com/track/so-what-live-at-philharmonic-hall-new-york-ny-february-1964/
+https://www.milesdavis.com/albums/four-more/
+
+Take Five: listening only; the game accompaniment engine is 4/4, not 5/4.
+The Dave Brubeck Quartet — Time Out (1959):
+https://www.youtube.com/watch?v=ryA6eHZNnXY
+https://www.davebrubeck.com/dave-brubecks-time-out
+George Benson — Bad Benson (1974):
+https://www.youtube.com/watch?v=dV3N-jisAoY
+
+Data validation: four 32-bar loops; 66 / 76 / 89 / 75 melody events respectively.
+Events are chronological and within their 128-beat loop; MIDI range across this
+corpus is 60–77. These checks establish data validity, not expert performance
+quality or a measured learning outcome.
+
+
+ADDITIONAL LICENSED CHORD LIBRARY — CHOCO (235 DISTINCT TITLES)
+
+Creators and attribution
+Jacopo de Berardinis, Albert Meroño-Peñuela, Andrea Poltronieri, Valentina Presutti,
+and the original iReal community chord annotators.
+
+Citation:
+de Berardinis, J., Meroño-Peñuela, A., Poltronieri, A., & Presutti, V. (2023).
+ChoCo: A chord corpus and a data transformation workflow for musical harmony
+knowledge graphs. Scientific Data, 10, 641.
+https://doi.org/10.1038/s41597-023-02410-w
+
+Data license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Original license statement, pinned to the exact source revision used:
+https://github.com/smashub/choco/blob/5fe168fd55be5c84512abcfbc4e6f1b1f8f0092a/LICENSE.md
+Repository:
+https://github.com/smashub/choco
+Source revision: 5fe168fd55be5c84512abcfbc4e6f1b1f8f0092a
+Retrieved: 2026-10-12
+Subset: partitions/ireal-pro/choco/playlists/jams/*.jams
+
+The repository explicitly licenses its data under CC BY 4.0 except the Chordify,
+Mozart Piano Sonata and Jazz Audio-Aligned Harmony subsets. None of those three
+subsets is used here. The Real Book, Wikifonia and audio subsets are not used.
+This attribution applies to the chord-annotation data; it does not claim that
+copyright in every underlying composition, lyric, arrangement or recording has
+expired, and it does not place the app's entire source code under CC BY 4.0.
+
+Selection and transformation
+- Start from 2,048 published playlist JAMS annotations, 1,866 with explicit 4/4.
+- Match a curated list of jazz-standard titles, yielding 311 different names.
+  Non-4/4, unknown-metre and transposed duplicate entries are not counted.
+- Remove N/no-chord entries and annotations with fractional equal divisions that
+  require a separate rhythmic interpretation. Keep only continuous integer-beat
+  annotation sequences supported by the current teaching engine.
+- Exclude seven charts with unsupported chord qualities rather than silently
+  replacing those chords. Also hold back I'll Remember April and Cherokee for
+  a separate review of their expanded-form length.
+- The resulting selection has 235 unique titles. The fixed list of source IDs and
+  SHA-256 checksums is stored per record in lib/standard-catalog-data.ts. Each UI
+  card links directly to its own JAMS file at the pinned source revision.
+- Preserve the source's expanded chord order and every retained within-bar change.
+  The source may contain repetitions, introductions or endings. It is a specific
+  annotated arrangement, not a guarantee of the canonical form of every tune.
+- Convert ChoCo's score-time encoding to absolute quarter-note beats:
+  (floor(sourceTime) - 1) * 4 + 10 * fractionalPart(sourceTime).
+  Preserve durations and assert continuous complete 4/4 bars.
+- Normalize equivalent chord spelling, not harmonic content: -7 -> m7,
+  ^/^7 -> maj7, h/h7 -> m7b5, o7 -> dim7, o -> dim, -^7 -> mMaj7,
+  7at -> 7alt, 69 -> 6/9, etc. These aliases are defined in ChoCo's grammar:
+  https://github.com/smashub/choco/blob/5fe168fd55be5c84512abcfbc4e6f1b1f8f0092a/choco/converters/grammar/leadsheet/leadsheet_ireal.lark
+- Source credits and style labels are retained. The source parser populates its
+  artist metadata field from tune.composer, but this project still labels it
+  "source credit" rather than claiming each composer's identity was independently
+  researched. Publication years are not supplied by the dataset and are omitted.
+- Teaching tempo and synthesized accompaniment are chosen by this app. The style
+  label is source metadata; the engine does not recreate every named historical
+  style or recording. Automatic saxophone lines are generated chord-tone examples.
+
+Reproduction
+Clone the source repository and check out the pinned revision, then run:
+  python3 lib/standard-catalog-generate.py /path/to/choco
+The script reads the fixed source-ID selection in standard-catalog-data.ts and
+rebuilds the dataset. It verifies the commit, metre, contiguous timing, chord
+spelling and unique titles before writing. It does not retrieve commercial media.
+
+Validation
+The corpus tests assert at least 220 unique selectable playable standards, valid
+harmony and beat boundaries, preservation through the app's import validator,
+per-tune attribution/checksums, and retention of the original four melodies and
+14 verified recording links. These are data-integrity checks; they do not claim
+music-teacher review of every annotation or measured learner improvement.
