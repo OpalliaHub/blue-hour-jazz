@@ -54,6 +54,8 @@ pnpm dev --host 127.0.0.1 --port 3000
 
 `pnpm start` 不运行开发服务器的模拟登录中间件，因此验证 AI 登录流程时应使用 `pnpm dev`。构建成功并不代表已完成公网部署或生产认证配置。
 
+如果需要直接运行 `scripts/*.sh` 辅助脚本，或使用可选的 `managed-linux` 构建配置，请先执行 `chmod +x scripts/*.sh`，确保脚本具有执行权限。上表中的默认 portable 配置与 pnpm 命令不依赖这些执行权限。
+
 ## 2. 配置 DeepSeek 教练
 
 ### 本机密钥
